@@ -9,10 +9,10 @@
 # START_VARIABLE_SECTION
 # This section contains setup and variables
 ###############################################################################################################
-#
+
 TCP_SERVICE_AND_CONFIG_NAME="openvpn_tcp"
 UDP_SERVICE_AND_CONFIG_NAME="openvpn_udp"
-
+$'\r'
 if [[ "$USER" != 'root' ]]; then
 	echo "Sorry, you need to run this as root"
 	exit
@@ -48,7 +48,7 @@ fi
 ###############################################################################################################
 
 
-newclient () {
+`$'{\r''
 	# This function is used to create udp client .ovpn file
 	cp /etc/openvpn/client-common.txt ~/"$1.ovpn"
 	echo "<ca>" >> ~/"$1.ovpn"
