@@ -1,8 +1,7 @@
 #!/bin/bash
 #
-# Script Copyright www.fornesia.com
+# Script Copyright By Mr's dummy
 # ==========================
-# 
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
