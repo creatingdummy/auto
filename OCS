@@ -45,7 +45,7 @@ service nginx restart
 rm -r /root/ocs
 clear
 rm -rf ~/.bash_history && history -c
-echo "                OCS PANEL"
+echo "  OCS PANEL"
 echo "----------------------------------------"
 echo "      PLEASE REBOOT TAKE EFFECT !"
 echo "========================================"
