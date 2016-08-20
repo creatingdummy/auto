@@ -3,7 +3,7 @@ echo 'AUTOSCRIPT OCS PANEL'
 echo 'UPDATE REPOSITORY'
 apt-get update
 clear
-echo 'AUTOSCRIPT BY Creating DummY'
+echo 'AUTOSCRIPT BY Fadhil Morshidi'
 clear
 echo 'INSTALL PACKAGE'
 apt-get --assume-yes install libxml-parser-perl
@@ -25,13 +25,13 @@ sed -i 's/cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
 clear
-#echo 'CREATE OCS PANEL'
-#apt-get --assume-yes install git
-#cd /home/vps/public_html
-#git init
-#git remote add origin https://github.com/adenvt/OcsPanels.git
-#git pull origin master
-#clear
+echo 'CREATE OCS PANEL'
+apt-get --assume-yes install git
+cd /home/vps/public_html
+git init
+git remote add origin https://github.com/adenvt/OcsPanels.git
+git pull origin master
+clear
 echo 'CREATE DATABASE'
 mysql --verbose --user=root --password --execute="CREATE DATABASE IF NOT EXISTS OCS_PANEL"
 echo 'GIVE PERMISSION'
