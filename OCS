@@ -29,7 +29,7 @@ echo 'CREATE OCS PANEL'
 apt-get --assume-yes install git
 cd /home/vps/public_html
 git init
-git remote add origin https://github.com/adenvt/OcsPanels.git
+git remote add origin https://github.com/creatingdummy/OcsPanels
 git pull origin master
 clear
 echo 'CREATE DATABASE'
